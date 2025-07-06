@@ -7,5 +7,10 @@ body {
     background-color: black;
 }
 #tasklist::-webkit-scrollbar{
-    display: none;
+    background-color: transparent;
+    height: 5px;
+}
+#tasklist::-webkit-scrollbar-thumb{
+    border-color: rgb(143, 143, 143);
+    border-radius: 50px;
 }

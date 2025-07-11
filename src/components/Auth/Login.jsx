@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
+
+  console.log(handleLogin)
  /*Two way binding*/ 
  
  const [email, setEmail] = useState('')

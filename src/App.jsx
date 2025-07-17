@@ -32,7 +32,7 @@ const App = () => {
     
   // }, )
 
-  const data =useContext(AuthContext)
+  const data = useContext(AuthContext)
   console.log(data)
 
   return (

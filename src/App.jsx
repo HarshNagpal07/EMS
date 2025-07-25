@@ -10,15 +10,7 @@ const App = () => {
   const [user, setUser] = useState(null)
   const [loggedInUserData, setLoggedInUserData] = useState(null)
   const authData = useContext(AuthContext)
-  //console.log() //Data Aa rha tha
-  // useEffect(() => {
-  //   if(authData){
-  //     const loggedInUser = localStorage.getItem("loggedInUser")
-  //     if(loggedInUser){
-  //       setUser(loggedInUser.role)
-  //     }
-  //   }
-  // }, [authData])
+  
   
 
   const handleLogin = (email, password)=>{

@@ -6,11 +6,21 @@ const CreateTask = () => {
   const [taskDate, setTaskDate] = useState("");
   const [assignTo, setAssignTo] = useState("");
   const [category, setCategory] = useState("");
+  
+  const [task, setTask] = useState({})
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    console.log("Task Created");
+    setTask({taskTitle, taskDescription, taskDate, category,active:false,newTask:true,failed:true,completed:false});
+    // console.log(task);
+
+    // setTaskDate("")isse mera data aa jayega aur gayab bhi ho jaye ga screen se
+    // setAssignTo("")
+    // setCategory("")
+    // setTaskDescription("")
+    // setTaskTitle("")
+    // console.log(taskTitle, taskDescription, taskDate, assignTo, category);
   };
   return (
     <div className="p-5 mt-5 rounded bg-[#1c1c1c]">
@@ -49,7 +59,7 @@ const CreateTask = () => {
             <input
             value={assignTo}
               onChange={(e) => {
-                setAsignTo(e.target.value);
+                setAssignTo(e.target.value);
               }}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="text"
